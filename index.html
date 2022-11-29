@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="homepage">
+      <h1
+        class="main-title"
+        id="changing-title"
+        onclick="swap()"
+        ,
+        ondblclick="swaps()"
+      >
+        CLICK THIS FOR A SURPRISE
+      </h1>
+      <h2 class="counter" id="count-el">0</h2>
+      <div class="container">
+        <button class="btn" id="increment-btn" onclick="increment()">
+          ONE MORE
+        </button>
+
+        <button class="btn" id="subtract-btn" onclick="subtract()">
+          MINUS ONE
+        </button>
+        <button class="btn" id="subtract-btn" onclick="multiply()">
+          DOUBLE THAT
+        </button>
+        <button class="btn" id="save-btn" onclick="save()">
+          SAVE IT FOR LA8R
+        </button>
+
+        <button class="btn" id="reset-btn" onclick="reset()">RESET</button>
+        <p class="saved-title" id="save-el">Previous entires:</p>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

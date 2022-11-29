@@ -1,0 +1,182 @@
+/*       */
+/* Reset */
+/*       */
+ 
+/* Box Sizing (This resets the sizing on the sudo elements aswell */
+*,
+*::before, 
+*::after {
+   box-sizing: border-box;
+}
+
+ 
+/*  reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+   margin: 0;
+}
+
+ 
+/* set up the body */
+body {
+   line-height: 1.5;
+   min-height: 100vh;
+   text-align: center;
+}
+ 
+ 
+/* make images easier to work with */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+  
+}
+
+
+/* make forms easier to work with */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+ 
+
+/* remove annimations for people who don't want them */
+@media (prefers-reduced-motion: reduce) {
+   *,
+   *::before,
+   *::after {
+       animation-duration: 0.01ms !important;
+       animation-iteration-count: 1 !important;
+       transition-duration: 0.01ms !important;
+       scroll-behavior: auto !important;
+   }
+}
+
+.homepage1 {
+    min-height: 100vh;
+    background-color: #eb00eb39;
+}
+
+
+.homepage {
+    height: 100vh;
+    background-color: #000000da;
+}
+ 
+.counter {
+    min-width: 30%;
+    max-width: 50%;
+    border: solid;
+    border-radius: 2em;
+    padding-top: 5px;
+    font-family: fantasy;
+    align-items: center;
+    margin-top: 25px;
+    color:rgb(246, 14, 184);
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.counter-btns {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-shadow: 0 0 10px;
+}
+
+.main-title {
+    cursor: pointer;
+    font-family: monospace;
+    color: #eb00eb;
+    font-size: 50px;
+    text-align: center;
+    height:fit-content;
+    padding-top: 2em;
+    text-shadow: 0 0 10px;
+    text-decoration:white overline;
+
+}
+
+.saved-title {
+    cursor: pointer;
+    font-family: monospace;
+    color: #eb00eb;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5%;
+    text-shadow: 0 0 10px;
+    text-decoration:white underline;
+
+}
+
+.btn {
+    
+    text-shadow: white 0 0 2px 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #eb00eb39;
+    border-radius: 0.25em;
+    border: 3px;
+    border-color: #eb00eb;
+    width: 12rem;
+    font-size: 16px;
+    font-family: monospace;
+    color: rgb(246, 14, 184);
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 500ms;
+}
+
+.btn:hover {
+        border-radius: 0.25em;
+    border-color: #eb00eb;
+    width: 13rem;
+    font-size: 17px;
+    font-family: monospace;
+    color: rgb(246, 14, 184);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .homepage {
+        min-height: 1000px;
+    }
+    .main-title {
+        font-size: 55px;
+        margin-top: none;
+        padding: 50px 5px 5px 5px;
+    }
+    .counter {
+        font-size: 50px;
+    }
+
+    .container {
+        display: block;
+        align-items: center;
+    }
+    .btn {
+        height: 60px;
+        width: 300px;
+        max-width: 65%;
+    }
+    .btn:hover {
+        height: 60px;
+        width: 300px;
+        max-width: 65%;
+    }
+}
