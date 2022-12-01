@@ -139,6 +139,7 @@ select {
     cursor: pointer;
     margin-top: 5px;
     transition: 500ms;
+    touch-action: manipulation;
 }
 
 .btn:hover {
@@ -174,6 +175,7 @@ select {
         height: 60px;
         width: 300px;
         max-width: 65%;
+        touch-action: manipulation;
     }
     .btn:hover {
         height: 60px;
